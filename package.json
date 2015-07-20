@@ -1,0 +1,19 @@
+{
+  "name": "react-webpack-test2",
+  "version": "1.0.0",
+  "description": "test create react webpack project from scratch",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ninohero/react-webpack-test2.git"
+  },
+  "author": "ninohero",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ninohero/react-webpack-test2/issues"
+  },
+  "homepage": "https://github.com/ninohero/react-webpack-test2"
+}
