@@ -1,9 +1,10 @@
 //import React from 'react';  
 var React = require('react');
+//var $     = require('./lib/jquery-1.11.3.min.js');
 import Router from 'react-router';  
-//import $ from 'jquery';
-//require('expose?$!expose?jQuery!jquery');
 import { DefaultRoute, Link, Route, RouteHandler } from 'react-router';
+require('../css/styles.css');
+require('expose?$!expose?jQuery!jquery');
 
 import LoginHandler from './components/Login.js';
 
@@ -22,7 +23,8 @@ let App = React.createClass({
   handleClick: function(event){
     event.preventDefault();
     //this.setState({userName: name});
-    console.log('clicky');
+    console.log($('.blah_class'));
+    console.log('clicky ' + event.target.className);
   },
   render() {
     return (
@@ -31,7 +33,6 @@ let App = React.createClass({
         <Link to="login">Login</Link>
         <a  href="blah" className='blah_class' onClick={this.handleClick}>blah</a>
 
-        {/* this is the importTant part */}
         <RouteHandler/>
       </div>
     );
